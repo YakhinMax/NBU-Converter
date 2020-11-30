@@ -15,6 +15,9 @@
 		50FE12D125753AFE009080D0 /* CurrencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE12D025753AFE009080D0 /* CurrencyTableViewController.swift */; };
 		50FE12D325753B15009080D0 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE12D225753B15009080D0 /* CurrencyTableViewCell.swift */; };
 		50FE12D6257557B8009080D0 /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE12D5257557B8009080D0 /* CurrencyData.swift */; };
+		50FE12D925755889009080D0 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE12D825755889009080D0 /* ExchangeViewController.swift */; };
+		50FE12DB25755B3E009080D0 /* DataSourceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE12DA25755B3E009080D0 /* DataSourceExtension.swift */; };
+		50FE12DD25755B50009080D0 /* DelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE12DC25755B50009080D0 /* DelegateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		50FE12D025753AFE009080D0 /* CurrencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewController.swift; sourceTree = "<group>"; };
 		50FE12D225753B15009080D0 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		50FE12D5257557B8009080D0 /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		50FE12D825755889009080D0 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		50FE12DA25755B3E009080D0 /* DataSourceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceExtension.swift; sourceTree = "<group>"; };
+		50FE12DC25755B50009080D0 /* DelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		50FE12BA257539CB009080D0 /* NBU */ = {
 			isa = PBXGroup;
 			children = (
+				50FE12D72575586B009080D0 /* ExchangeController */,
 				50FE12D4257557A4009080D0 /* Model */,
 				50FE12CF25753A7E009080D0 /* CurrencyTable */,
 				50FE12BB257539CB009080D0 /* AppDelegate.swift */,
@@ -87,6 +94,16 @@
 				50FE12D5257557B8009080D0 /* CurrencyData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		50FE12D72575586B009080D0 /* ExchangeController */ = {
+			isa = PBXGroup;
+			children = (
+				50FE12D825755889009080D0 /* ExchangeViewController.swift */,
+				50FE12DA25755B3E009080D0 /* DataSourceExtension.swift */,
+				50FE12DC25755B50009080D0 /* DelegateExtension.swift */,
+			);
+			path = ExchangeController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50FE12BC257539CB009080D0 /* AppDelegate.swift in Sources */,
+				50FE12D925755889009080D0 /* ExchangeViewController.swift in Sources */,
+				50FE12DD25755B50009080D0 /* DelegateExtension.swift in Sources */,
 				50FE12D125753AFE009080D0 /* CurrencyTableViewController.swift in Sources */,
 				50FE12D325753B15009080D0 /* CurrencyTableViewCell.swift in Sources */,
+				50FE12DB25755B3E009080D0 /* DataSourceExtension.swift in Sources */,
 				50FE12D6257557B8009080D0 /* CurrencyData.swift in Sources */,
 				50FE12BE257539CB009080D0 /* SceneDelegate.swift in Sources */,
 			);
