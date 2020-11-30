@@ -154,33 +154,42 @@
         <scene sceneID="boc-VH-qQZ">
             <objects>
                 <tableViewController id="5qY-ru-yvG" customClass="CurrencyTableViewController" customModule="NBU" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D8e-bX-GUM">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D8e-bX-GUM">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="674"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hI0-OS-KqY" customClass="CurrencyTableViewCell" customModule="NBU" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="currency" id="hI0-OS-KqY" customClass="CurrencyTableViewCell" customModule="NBU" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="374" height="50.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hI0-OS-KqY" id="qwa-OX-7TX">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-1a-n9S">
-                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-1a-n9S">
+                                            <rect key="frame" x="20" y="10" width="42" height="30.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="D4T-Mc-Mrm"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-CW-Nlu">
-                                            <rect key="frame" x="352" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-CW-Nlu">
+                                            <rect key="frame" x="312" y="10" width="42" height="30.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PgB-1a-n9S" firstAttribute="top" secondItem="qwa-OX-7TX" secondAttribute="top" constant="10" id="9M9-sr-sV9"/>
+                                        <constraint firstAttribute="trailing" secondItem="ue4-CW-Nlu" secondAttribute="trailing" constant="20" id="D3u-ZO-XN7"/>
+                                        <constraint firstAttribute="bottom" secondItem="PgB-1a-n9S" secondAttribute="bottom" constant="10" id="bPd-lh-vmM"/>
+                                        <constraint firstItem="ue4-CW-Nlu" firstAttribute="top" secondItem="qwa-OX-7TX" secondAttribute="top" constant="10" id="gSh-X2-KVg"/>
+                                        <constraint firstAttribute="bottom" secondItem="ue4-CW-Nlu" secondAttribute="bottom" constant="10" id="w77-C0-PIP"/>
+                                        <constraint firstItem="PgB-1a-n9S" firstAttribute="leading" secondItem="qwa-OX-7TX" secondAttribute="leading" constant="20" id="xDg-WL-LLO"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="currency" destination="PgB-1a-n9S" id="duu-IM-1iR"/>
